@@ -16,102 +16,119 @@ interface ProjectData {
 const PROJECTS: ProjectData[] = [
   {
     number: '01',
-    category: 'DevOps · SRE',
-    name: 'Self-Healing Infrastructure',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/self-healing-infrastructure-devops',
-    col1Image1: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
+    category: 'AWS · Cloud',
+    name: '15 AWS Cloud Projects',
+    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/15-aws-cloud-projects',
+    col1Image1:
+      'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '02',
-    category: 'Cloud · CI/CD',
-    name: 'CI/CD Pipeline Automation',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/devops-cicd-docker',
-    col1Image1: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop',
+    category: 'Terraform · IaC · AWS',
+    name: 'Infrastructure Automation',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/Infrastructure-as-Code-IaC-Automation-08-AWS-Projects',
+    col1Image1:
+      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '03',
-    category: 'Terraform · AWS',
-    name: 'Infrastructure Automation',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/Infrastructure-as-Code-IaC-Automation-08-AWS-Projects',
-    col1Image1: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop',
+    category: 'AWS · Solutions Architect',
+    name: 'AWS Solutions Architect Projects',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/aws-solutions-architect-projects',
+    col1Image1:
+      'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '04',
-    category: 'AWS · Solutions Architect',
-    name: 'AWS Solutions Architect Projects',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/aws-solutions-architect-projects',
-    col1Image1: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1200&auto=format&fit=crop',
+    category: 'AWS · AI/ML · Bedrock',
+    name: 'AWS AI Projects Portfolio',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/aws-ai-projects-portfolio',
+    col1Image1:
+      'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1655720828018-edd2daec9349?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '05',
     category: 'AWS · Security',
     name: 'AWS Security Projects',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/aws-security-projects',
-    col1Image1: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=1200&auto=format&fit=crop',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/aws-security-projects',
+    col1Image1:
+      'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '06',
-    category: 'AWS · AI/ML',
-    name: 'AWS AI Projects Portfolio',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/aws-ai-projects-portfolio',
-    col1Image1: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1655720828018-edd2daec9349?q=80&w=1200&auto=format&fit=crop',
+    category: 'GenAI · Bedrock · PartyRock',
+    name: 'AI Productivity Planner',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/ai-productivity-planner',
+    col1Image1:
+      'https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '07',
-    category: 'GenAI · Bedrock',
-    name: 'AI Productivity Planner',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/ai-productivity-planner',
-    col1Image1: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=1200&auto=format&fit=crop',
+    category: 'DevOps · SRE',
+    name: 'Self-Healing Infrastructure',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/self-healing-infrastructure-devops',
+    col1Image1:
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '08',
-    category: 'Node.js · AWS · CI/CD',
-    name: 'Multi-Tier Node.js CI/CD',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/multi-tier-nodejs-cicd',
-    col1Image1: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?q=80&w=1200&auto=format&fit=crop',
+    category: 'Docker · GitHub Actions · CI/CD',
+    name: 'CI/CD Pipeline Automation',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/devops-cicd-docker',
+    col1Image1:
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop',
   },
   {
     number: '09',
-    category: 'AWS · Cloud',
-    name: '15 AWS Cloud Projects',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/15-aws-cloud-projects',
-    col1Image1: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    number: '10',
-    category: 'DevOps · Internship',
-    name: 'Elevate Labs DevOps Intern',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/Elevate-labs-devops-intern',
-    col1Image1: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    number: '11',
-    category: 'Web · Frontend',
-    name: 'Foodiebrat',
-    liveUrl: 'https://github.com/sudharsanbaskaran09-eng/foodiebrat',
-    col1Image1: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
-    col1Image2: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1200&auto=format&fit=crop',
-    col2Image: 'https://images.unsplash.com/photo-1476224203421-9ac39bcb3df4?q=80&w=1200&auto=format&fit=crop',
+    category: 'Node.js · EC2 · RDS · GitHub Actions',
+    name: 'Multi-Tier Node.js CI/CD',
+    liveUrl:
+      'https://github.com/sudharsanbaskaran09-eng/multi-tier-nodejs-cicd',
+    col1Image1:
+      'https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1200&auto=format&fit=crop',
+    col1Image2:
+      'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?q=80&w=1200&auto=format&fit=crop',
+    col2Image:
+      'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1200&auto=format&fit=crop',
   },
 ];
 
@@ -245,4 +262,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-  

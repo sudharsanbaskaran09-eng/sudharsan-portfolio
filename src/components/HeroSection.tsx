@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import FadeIn from './FadeIn';
 
 const NAV_LINKS = [
@@ -9,62 +9,14 @@ const NAV_LINKS = [
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const [muted, setMuted] = useState(true);
-  const [showSoundHint, setShowSoundHint] = useState(true);
-
-  useEffect(() => {
-    const t = setTimeout(() => setShowSoundHint(false), 5000);
-    return () => clearTimeout(t);
-  }, []);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-
-    if (!section) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          const v = videoRef.current;
-
-          if (v && !v.muted) {
-            v.muted = true;
-            setMuted(true);
-          }
-        }
-      },
-      {
-        threshold: 0,
-        rootMargin: '-50% 0px 0px 0px',
-      }
-    );
-
-    observer.observe(section);
-
-    return () => observer.disconnect();
-  }, []);
-
-  const toggleMute = () => {
-    const v = videoRef.current;
-
-    if (!v) return;
-
-    v.muted = !v.muted;
-
-    setMuted(v.muted);
-    setShowSoundHint(false);
-  };
 
   return (
     <section
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden bg-black"
     >
-      {/* Video Background */}
+      {/* Background Video */}
       <video
-        ref={videoRef}
         autoPlay
         muted
         loop
@@ -84,7 +36,7 @@ const HeroSection = () => {
       {/* Orange Cinematic Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#F97316]/10" />
 
-      {/* Content */}
+      {/* Main Content */}
       <div className="relative z-10 flex h-full flex-col">
         {/* Navbar */}
         <FadeIn delay={0} y={-20}>
@@ -111,12 +63,12 @@ const HeroSection = () => {
           </div>
         </FadeIn>
 
-        {/* Main Hero */}
+        {/* Hero Section */}
         <div className="flex flex-1 items-center">
           <div className="w-full max-w-7xl px-6 md:px-10">
             <FadeIn delay={0.3} y={20}>
               <p className="mb-4 text-[10px] sm:text-xs font-medium uppercase tracking-[0.35em] text-[#93C5FD]">
-                Cloud • DevOps • SRE Engineer
+                CLOUD • DEVOPS • SRE ENGINEER
               </p>
             </FadeIn>
 
@@ -127,23 +79,23 @@ const HeroSection = () => {
                   fontSize: 'clamp(3rem, 12vw, 10.5rem)',
                 }}
               >
-                Sudharsan
+                SUDHARSAN
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.85} y={20}>
               <p className="mt-5 md:mt-7 max-w-2xl text-[11px] sm:text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-white/75 leading-relaxed">
-                Building scalable cloud infrastructure with AWS, Kubernetes,
-                Terraform, CI/CD automation, monitoring systems, and
-                self-healing DevOps architecture.
+                BUILDING SCALABLE CLOUD INFRASTRUCTURE WITH AWS,
+                KUBERNETES, TERRAFORM, CI/CD AUTOMATION,
+                MONITORING SYSTEMS, AND SELF-HEALING
+                DEVOPS ARCHITECTURE.
               </p>
             </FadeIn>
           </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Scroll Bottom */}
         <div className="flex items-end justify-between px-6 md:px-10 pb-7 sm:pb-10 md:pb-12">
-          {/* Scroll */}
           <FadeIn delay={1.1} y={20}>
             <a
               href="#about"
@@ -151,7 +103,7 @@ const HeroSection = () => {
               className="group flex flex-col items-center gap-3"
             >
               <span className="text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.35em] text-white/70 transition group-hover:text-white">
-                Scroll
+                SCROLL
               </span>
 
               <div className="relative h-12 w-px overflow-hidden bg-white/20">
@@ -164,30 +116,6 @@ const HeroSection = () => {
               </div>
             </a>
           </FadeIn>
-
-          {/* Sound Toggle */}
-          <FadeIn delay={1.1} y={20}>
-            <div className="flex items-center gap-3">
-              {showSoundHint && (
-                <span
-                  className="hidden sm:inline text-[10px] font-medium uppercase tracking-[0.25em] text-white/70"
-                  style={{
-                    animation: 'pulseFade 2s ease-in-out infinite',
-                  }}
-                >
-                  Tap for sound
-                </span>
-              )}
-
-              <button
-                onClick={toggleMute}
-                aria-label={muted ? 'Unmute video' : 'Mute video'}
-                className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white backdrop-blur-xl transition hover:bg-white/20 hover:scale-110"
-              >
-                {muted ? '🔇' : '🔊'}
-              </button>
-            </div>
-          </FadeIn>
         </div>
       </div>
 
@@ -199,16 +127,6 @@ const HeroSection = () => {
 
           100% {
             transform: translateY(200%);
-          }
-        }
-
-        @keyframes pulseFade {
-          0%, 100% {
-            opacity: 0.5;
-          }
-
-          50% {
-            opacity: 1;
           }
         }
       `}</style>
