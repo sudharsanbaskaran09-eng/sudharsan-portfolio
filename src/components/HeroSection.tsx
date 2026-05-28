@@ -18,10 +18,10 @@ const HeroSection = () => {
       {/* Background Video */}
       <video
         autoPlay
-        muted
         loop
         playsInline
         preload="auto"
+        controls
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/intro.mp4" type="video/mp4" />
@@ -63,7 +63,7 @@ const HeroSection = () => {
           </div>
         </FadeIn>
 
-        {/* Hero Section */}
+        {/* Hero Content */}
         <div className="flex flex-1 items-center">
           <div className="w-full max-w-7xl px-6 md:px-10">
             <FadeIn delay={0.3} y={20}>
