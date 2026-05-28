@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import FadeIn from './FadeIn';
 
 const NAV_LINKS = [
@@ -12,6 +12,29 @@ const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+
+  // Pause when hero scrolls out of view, resume when back
+  useEffect(() => {
+    const section = sectionRef.current;
+    const video = videoRef.current;
+    if (!section || !video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Only resume if user had it playing
+          if (isPlaying) video.play();
+        } else {
+          // Always pause when out of view
+          video.pause();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, [isPlaying]);
 
   const handleFirstPlay = () => {
     const video = videoRef.current;
@@ -38,7 +61,7 @@ const HeroSection = () => {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden bg-black"
     >
-      {/* Background Video — no autoPlay, no muted = sound works after user gesture */}
+      {/* Background Video */}
       <video
         ref={videoRef}
         loop
