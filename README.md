@@ -9,16 +9,6 @@ npm install
 np
 ## Project structure
 
-```
-src/
-├── App.tsx                    # composes all sections
-├── main.tsx                   # React entry
-├── index.css                  # global styles + .hero-heading gradient
-└── components/
-    ├── HeroSection.tsx        # navbar, massive heading, magnetic portrait
-    ├── AboutSection.tsx       # bio, animated text, skills grid
-    ├── ServicesSection.tsx    # white section, 4 numbered services
-    ├── ProjectsSection.tsx    # sticky-stacking project cards
     ├── ContactSection.tsx     # 4 contact methods with icons
     │
     ├── ContactButton.tsx      # gradient pill CTA
