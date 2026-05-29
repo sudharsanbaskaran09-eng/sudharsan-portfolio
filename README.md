@@ -30,10 +30,6 @@ npm run build    # production build → /dist
 npm run preview  # serve /dist locally
 ```
 
-## Deploy to Vercel
-
-Push to GitHub → import the repo at [vercel.com/new](https://vercel.com/new) → click Deploy. No environment variables needed.
-
 ## Project structure
 
 ```
