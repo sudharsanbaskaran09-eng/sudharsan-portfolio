@@ -1,17 +1,3 @@
-# Sudharsan  — Cloud And DevOps Engineer Portfolio
-
-A dark-themed personal portfolio for **Sudharsan B** — Computer Science graduate from NSUT, currently a Content R&D Trainee at PhysicsWallah. Focused on UI/UX, front-end development, and GenAI integration.
-
-Built with **React + TypeScript + Vite + Tailwind CSS + Framer Motion**. Designed for one-click deployment on **Vercel**.
-
-## Stack
-
-- React 18 / TypeScript
-- Vite (build tool)
-- Tailwind CSS (utility-first styling)
-- Framer Motion (animations + scroll effects)
-- Lucide React (icons)
-- Kanit font (Google Fonts, weights 300–900)
 
 ## Sections
 
