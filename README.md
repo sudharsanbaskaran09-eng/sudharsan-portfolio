@@ -18,18 +18,9 @@ Built with **React + TypeScript + Vite + Tailwind CSS + Framer Motion**. Designe
 1. **Hero** — name, tagline, magnetic-hover portrait
 2. **About** — bio + skills grouped by Languages / Frameworks / Tools / AI
 3. **Services** — UI/UX Design, Web Design, Front-end Development, GenAI Integration
-4. **Projects** — sticky-stacking cards for AI Tutor, PiLearn, ResumeIQ, Notch
-5. **Contact** — Email, WhatsApp, LinkedIn, GitHub
 
-## Run locally
-
-```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build → /dist
-npm run preview  # serve /dist locally
-```
-
+np
 ## Project structure
 
 ```
