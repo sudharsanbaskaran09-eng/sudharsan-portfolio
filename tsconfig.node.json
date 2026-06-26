@@ -3,5 +3,4 @@
     "composite": true,
     "skipLibCheck": true,
     "module"
-  "include": ["vite.config.ts"]
-}
+  "i
