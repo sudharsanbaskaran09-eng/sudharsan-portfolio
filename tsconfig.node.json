@@ -1,6 +1,4 @@
 {
   "compilerOptions": {
     "composite": true,
-    "skipLibCheck": true,
-    "module"
-  "i
+    "skipL
