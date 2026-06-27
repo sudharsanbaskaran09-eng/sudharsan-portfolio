@@ -3,5 +3,5 @@ dist
 dist-ssr
 .vercel
 .env
-.env.local
+.en
 
