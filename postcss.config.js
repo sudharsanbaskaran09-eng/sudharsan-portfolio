@@ -1,4 +1,7 @@
 export default {
   plugins: {
-    tai
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
 
