@@ -1,4 +1,3 @@
-import { defineConfig 
-export defa
+import { 
   plugins: [react()],
 });
