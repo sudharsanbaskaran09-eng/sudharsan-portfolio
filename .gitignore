@@ -2,5 +2,3 @@ node_modules
 dist
 dist-ssr
 .vercel
-.env
-.env.local
