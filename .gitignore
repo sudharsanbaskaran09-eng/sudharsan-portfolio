@@ -1,7 +1,6 @@
 node_modules
 dist
-dist-ssr
-.vercel
+dist
 .env
 .env.local
 *.l
