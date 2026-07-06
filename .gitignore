@@ -1,4 +1,10 @@
-node_mod
+node_modules
 dist
+dist-ssr
+.vercel
 .env
-.env.loc
+.env.local
+*.log
+.DS_Store
+.vscode
+.idea
