@@ -1,1 +1,1 @@
-Designed & built by **Sudharsan B** · [LinkedIn](https://www.linkedin.com/in/harsh-goyal-7900b2256/) · [GitHub](https://github.com/harshgoyal27)
+Designed & built by **Sudharsan B** · [LinkedIn](https://www.linkedin.com/in/sudharsan-baskaran-95443925a/) · [GitHub](https://github.com/harshgoyal27)
